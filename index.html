@@ -14,21 +14,46 @@
       font-family: 'Montserrat', sans-serif;
       background: #0a1a3b;
       color: white;
+      scroll-behavior: smooth;
     }
     header {
-      background: url('novo_logo_duffeck.jpg') no-repeat center center;
-      background-size: cover;
-      padding: 100px 20px 40px;
-      text-align: center;
+      background: linear-gradient(to right, #061c3f, #0b2a7a);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 30px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
     }
-    header h1 {
-      font-size: 2.8em;
-      margin-top: 180px;
-      color: #fff;
-      text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+    header img {
+      height: 50px;
+      border-radius: 8px;
+    }
+    .logo-title {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .logo-title h1 {
+      font-size: 1.5rem;
+      margin: 0;
+      color: #FFD700;
+    }
+    nav a {
+      margin-left: 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #FFD700;
     }
     section {
-      padding: 40px 20px;
+      padding: 100px 20px 40px;
       max-width: 900px;
       margin: auto;
     }
@@ -101,10 +126,18 @@
 <body>
 
 <header>
-  <h1>DUFFECK SOLUÇÕES FINANCEIRAS</h1>
+  <div class="logo-title">
+    <img src="novo_logo_duffeck.jpg" alt="Duffeck Logo"/>
+    <h1>DUFFECK SOLUÇÕES FINANCEIRAS</h1>
+  </div>
+  <nav>
+    <a href="#servicos">Serviços</a>
+    <a href="#simular">Simular</a>
+    <a href="#contato">Contato</a>
+  </nav>
 </header>
 
-<section>
+<section id="servicos">
   <div class="produto" data-aos="fade-up">
     <h2><i class="fas fa-hand-holding-usd"></i> Saque FGTS</h2>
     <p>Antecipe seu FGTS com taxas competitivas. Dinheiro rápido na conta para emergências ou planejamento.</p>
@@ -140,7 +173,9 @@
     <p>Use o limite do seu cartão e transforme em crédito com prazos estendidos.</p>
     <a class="btn-whatsapp" href="https://wa.me/5547992918424" target="_blank">Quero Simular</a>
   </div>
+</section>
 
+<section id="contato">
   <div class="produto" data-aos="fade-up">
     <h2><i class="fas fa-envelope"></i> Entre em Contato</h2>
     <form onsubmit="enviarParaWhatsapp(event)">
