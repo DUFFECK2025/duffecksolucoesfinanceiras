@@ -2,11 +2,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>DUFFECK - Soluções Financeiras</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
   <style>
     body {
       margin: 0;
@@ -15,16 +16,16 @@
       color: white;
     }
     header {
-      background: #071330;
-      padding: 20px;
+      background: url('novo_logo_duffeck.jpg') no-repeat center center;
+      background-size: cover;
+      padding: 100px 20px 40px;
       text-align: center;
     }
-    header img {
-      max-height: 100px;
-    }
-    h1 {
-      font-size: 2.5em;
-      margin: 20px 0 10px;
+    header h1 {
+      font-size: 2.8em;
+      margin-top: 180px;
+      color: #fff;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
     }
     section {
       padding: 40px 20px;
@@ -35,7 +36,20 @@
       color: #FFD700;
     }
     .produto {
-      margin-bottom: 40px;
+      background: #112c5b;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      padding: 25px;
+      margin-bottom: 30px;
+      transition: transform 0.3s;
+    }
+    .produto:hover {
+      transform: translateY(-5px);
+    }
+    .produto i {
+      color: #FFD700;
+      font-size: 24px;
+      margin-right: 10px;
     }
     .btn-whatsapp, .floating-whatsapp {
       display: inline-block;
@@ -45,6 +59,7 @@
       text-decoration: none;
       border-radius: 5px;
       font-weight: bold;
+      margin-top: 10px;
     }
     footer {
       background: #000;
@@ -58,11 +73,11 @@
       text-decoration: none;
       font-weight: bold;
     }
-    form input, form textarea {
+    form input {
       width: 100%;
       padding: 10px;
-      margin: 10px 0;
-      border-radius: 5px;
+      margin: 8px 0;
+      border-radius: 8px;
       border: none;
     }
     form button {
@@ -73,6 +88,7 @@
       border: none;
       border-radius: 5px;
       cursor: pointer;
+      margin-top: 10px;
     }
     .floating-whatsapp {
       position: fixed;
@@ -85,61 +101,60 @@
 <body>
 
 <header>
-  <img src="novo_logo_duffeck.jpg" alt="Logo Duffeck">
   <h1>DUFFECK SOLUÇÕES FINANCEIRAS</h1>
 </header>
 
 <section>
   <div class="produto" data-aos="fade-up">
-    <h2>Saque FGTS</h2>
-    <p>Antecipe seu FGTS e tenha dinheiro rápido na conta com taxas competitivas. Ideal para emergências e planejamento financeiro.</p>
+    <h2><i class="fas fa-hand-holding-usd"></i> Saque FGTS</h2>
+    <p>Antecipe seu FGTS com taxas competitivas. Dinheiro rápido na conta para emergências ou planejamento.</p>
     <a class="btn-whatsapp" href="https://wa.me/5547992918424" target="_blank">Quero Simular</a>
   </div>
 
   <div class="produto" data-aos="fade-up">
-    <h2>Empréstimo Consignado</h2>
-    <p>Parcelas descontadas direto na folha, com juros mais baixos e aprovação facilitada para aposentados, pensionistas e servidores.</p>
+    <h2><i class="fas fa-file-invoice-dollar"></i> Empréstimo Consignado</h2>
+    <p>Parcelas com desconto em folha e taxas reduzidas para aposentados, pensionistas e servidores públicos.</p>
     <a class="btn-whatsapp" href="https://wa.me/5547992918424" target="_blank">Quero Simular</a>
   </div>
 
   <div class="produto" data-aos="fade-up">
-    <h2>Empréstimo Privado (CLT)</h2>
-    <p>Crédito pessoal para trabalhadores de carteira assinada. Rápido, sem burocracia e com excelente custo-benefício.</p>
+    <h2><i class="fas fa-user-tie"></i> Empréstimo Privado (CLT)</h2>
+    <p>Crédito para trabalhadores com carteira assinada. Fácil, rápido e com ótimas condições.</p>
     <a class="btn-whatsapp" href="https://wa.me/5547992918424" target="_blank">Quero Simular</a>
   </div>
 
   <div class="produto" data-aos="fade-up">
-    <h2>Financiamento de Veículos</h2>
-    <p>Realize o sonho do carro próprio com condições especiais e parcelas que cabem no bolso. Financiamento facilitado e ágil.</p>
+    <h2><i class="fas fa-car"></i> Financiamento de Veículos</h2>
+    <p>Conquiste seu carro novo com parcelas acessíveis e financiamento facilitado.</p>
     <a class="btn-whatsapp" href="https://wa.me/5547992918424" target="_blank">Quero Simular</a>
   </div>
 
   <div class="produto" data-aos="fade-up">
-    <h2>Financiamento de Imóveis</h2>
-    <p>Casa nova com as melhores taxas do mercado. Faça sua simulação e descubra como conquistar seu imóvel dos sonhos.</p>
+    <h2><i class="fas fa-home"></i> Financiamento de Imóveis</h2>
+    <p>Realize o sonho da casa própria com taxas exclusivas e aprovação rápida.</p>
     <a class="btn-whatsapp" href="https://wa.me/5547992918424" target="_blank">Quero Simular</a>
   </div>
 
   <div class="produto" data-aos="fade-up">
-    <h2>Empréstimo no Cartão de Crédito</h2>
-    <p>Use seu limite do cartão para conseguir crédito com mais flexibilidade e prazos estendidos. Dinheiro na conta na hora.</p>
+    <h2><i class="fas fa-credit-card"></i> Empréstimo no Cartão de Crédito</h2>
+    <p>Use o limite do seu cartão e transforme em crédito com prazos estendidos.</p>
     <a class="btn-whatsapp" href="https://wa.me/5547992918424" target="_blank">Quero Simular</a>
   </div>
 
   <div class="produto" data-aos="fade-up">
-    <h2>Entre em Contato</h2>
-    <form action="https://formsubmit.co/duffecksolucoesfinanceiras@gmail.com" method="POST">
-      <input type="text" name="nome" placeholder="Nome completo" required><br>
-      <input type="text" name="cpf" placeholder="CPF" required><br>
-      <input type="tel" name="telefone" placeholder="Telefone" required><br>
-      <input type="email" name="email" placeholder="Email" required><br>
-      <input type="date" name="data_nascimento" placeholder="Data de Nascimento" required><br>
-      <button type="submit">Enviar</button>
+    <h2><i class="fas fa-envelope"></i> Entre em Contato</h2>
+    <form onsubmit="enviarParaWhatsapp(event)">
+      <input type="text" id="nome" placeholder="Nome completo" required><br>
+      <input type="text" id="cpf" placeholder="CPF" required><br>
+      <input type="tel" id="telefone" placeholder="Telefone" required><br>
+      <input type="email" id="email" placeholder="Email" required><br>
+      <input type="date" id="data_nascimento" required><br>
+      <button type="submit">Enviar via WhatsApp</button>
     </form>
   </div>
 </section>
 
-<a class="floating-whatsapp" href="https://wa.me/5547992918424" target="_blank">Fale Conosco</a>
+<a class="floating-whatsapp" href="https://wa.me/5547992918424" target="_blank"><i class="fab fa-whatsapp"></i> Fale Conosco</a>
 
 <footer>
   <p class="redes">
@@ -153,6 +168,19 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
+
+  function enviarParaWhatsapp(event) {
+    event.preventDefault();
+    const nome = document.getElementById("nome").value;
+    const cpf = document.getElementById("cpf").value;
+    const telefone = document.getElementById("telefone").value;
+    const email = document.getElementById("email").value;
+    const data = document.getElementById("data_nascimento").value;
+
+    const msg = `Olá, meu nome é ${nome}.\nCPF: ${cpf}\nTelefone: ${telefone}\nEmail: ${email}\nData de nascimento: ${data}\nGostaria de fazer uma simulação.`;
+
+    window.open(`https://wa.me/5547992918424?text=${encodeURIComponent(msg)}`, '_blank');
+  }
 </script>
 
 </body>
